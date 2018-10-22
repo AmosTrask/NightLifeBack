@@ -11,11 +11,11 @@ beforeAll(async () => {
 
 describe("User manager", () => {
   it("should not create user with existing username", (done) => {
-    request(app).post("/user")
-      .set("Authorization", "Bearer " + token)
+    request(app).post("/signup")
       .send({
         username: "admin",
         password: "pwd",
+        email: "test@live.fr",
         role: "USER",
       })
       .expect(400)
