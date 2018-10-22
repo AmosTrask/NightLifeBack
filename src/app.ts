@@ -6,6 +6,7 @@ const cors = require("cors");
 import expressValidator from "express-validator";
 
 import { EchoAPI } from "./api/echo";
+import { SignupAPI } from "./api/signup-route";
 import { UserAPI } from "./api/user-route";
 import { AuthGuard } from "./auth/auth-guard";
 import { TokenIssuer } from "./auth/token-issuer";
@@ -17,6 +18,7 @@ app.use(expressValidator());
 app.use(express.json());
 
 app.use("/auth", TokenIssuer);
+app.use("/signup", SignupAPI);
 
 app.use(AuthGuard);
 

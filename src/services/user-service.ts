@@ -24,7 +24,7 @@ export class UserService {
       user.password = hashedPassword;
 
       const savedUser: User = await UserDao.createUser(user);
-      resolve(savedUser);
+      resolve(await DtoFactory.convert(savedUser));
     });
   }
 

@@ -35,6 +35,7 @@ export class DtoFactory {
     userDto.username = user.username;
     userDto.firstName = user.firstName;
     userDto.lastName = user.lastName;
+    userDto.email = user.email;
 
     return userDto;
   }
