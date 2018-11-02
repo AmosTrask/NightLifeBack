@@ -12,6 +12,7 @@ const userRef: User = {
   firstName: "testFN",
   lastName: "testLN",
   password: "testPwd",
+  email: "test@test.com",
 };
 
 afterAll(async () => {

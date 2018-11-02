@@ -1,0 +1,20 @@
+[
+    {
+      "_id": "5bc362b8d95d221ddccaa331",
+      "name": "Flannerys Bar",
+      "address": "17 Upper Denmark St, Limerick",
+      "coordinates": {
+          "lat": "52.663091",
+          "lng": "-8.623585"
+      }
+    },
+    {
+      "_id": "5bc362b8d95d221ddccaa332",
+      "name": "The Locke Bar",
+      "address": "3 George's Quay, Limerick, V94 K8KX",
+      "coordinates": {
+          "lat": "52.667054",
+          "lng": "-8.622975"
+      }
+    }
+  ]

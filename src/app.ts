@@ -5,6 +5,7 @@ import express from "express";
 const cors = require("cors");
 import expressValidator from "express-validator";
 
+import { BarAPI } from "./api/bar-route";
 import { EchoAPI } from "./api/echo";
 import { SignupAPI } from "./api/signup-route";
 import { UserAPI } from "./api/user-route";
@@ -24,5 +25,6 @@ app.use(AuthGuard);
 
 app.use("/echo", EchoAPI);
 app.use("/user", UserAPI);
+app.use("/bar", BarAPI);
 
 export default app;

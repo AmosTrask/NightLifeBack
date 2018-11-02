@@ -1,5 +1,7 @@
+import { BarDto } from "../dto/bar-dto";
 import { DTO } from "../dto/dto.abstract";
 import { UserDto } from "../dto/user-dto";
+import { Bar } from "../entities/bar";
 import { Entity } from "../entities/entity.abstract";
 import { User } from "../entities/user";
 
@@ -7,6 +9,8 @@ export class DtoFactory {
   public static async convert(entity: Entity): Promise<DTO> {
     if (entity instanceof User) {
       return await this.makeUserDto(entity);
+    } else if (entity instanceof Bar) {
+      return await this.makeBarDto(entity);
     } else {
       return null;
     }
@@ -38,5 +42,16 @@ export class DtoFactory {
     userDto.email = user.email;
 
     return userDto;
+  }
+
+  private static async makeBarDto(bar: Bar): Promise<BarDto> {
+    const barDto: BarDto = new BarDto();
+
+    barDto._id = bar._id.toHexString();
+    barDto.name = bar.name;
+    barDto.address = bar.address;
+    barDto.coordinates = bar.coordinates;
+
+    return barDto;
   }
 }
