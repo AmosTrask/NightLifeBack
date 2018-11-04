@@ -18,12 +18,12 @@ export class BarDao {
     });
   }
 
-  public static async getAllBars() {
+  public static async getBars(query: any) {
     return new Promise<Bar[]>(async (resolve, reject) => {
       const db = await MongoDB.Instance.getClient();
       const barDB = db.collection("bars");
 
-      barDB.find({}).toArray((err: MongoError, bars: Bar[]) => {
+      barDB.find({query}).toArray((err: MongoError, bars: Bar[]) => {
         if (err) {
           reject();
           return;

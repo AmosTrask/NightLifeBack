@@ -3,8 +3,8 @@ import { BarService } from "../services/bar-service";
 
 const router = express.Router();
 
-router.get("/all", async (req, res) => {
-  await BarService.getAllBars()
+router.get("/", async (req, res) => {
+  await BarService.getBars(req.query)
   .then((bars) => {
     res.status(201).send(bars);
   })
@@ -17,8 +17,8 @@ router.get("/all", async (req, res) => {
   });
 });
 
-router.get("/", async (req, res) => {
-  await BarService.getBarById(req.query.id)
+router.get("/:id", async (req, res) => {
+  await BarService.getBarById(req.params.id)
   .then((bar) => {
     res.status(200).send(bar);
   })

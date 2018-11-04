@@ -7,6 +7,7 @@ import expressValidator from "express-validator";
 
 import { BarAPI } from "./api/bar-route";
 import { EchoAPI } from "./api/echo";
+import { OfferAPI } from "./api/offer-route";
 import { SignupAPI } from "./api/signup-route";
 import { UserAPI } from "./api/user-route";
 import { AuthGuard } from "./auth/auth-guard";
@@ -24,7 +25,8 @@ app.use("/signup", SignupAPI);
 app.use(AuthGuard);
 
 app.use("/echo", EchoAPI);
-app.use("/user", UserAPI);
-app.use("/bar", BarAPI);
+app.use("/users", UserAPI);
+app.use("/bars", BarAPI);
+app.use("/offers", OfferAPI);
 
 export default app;

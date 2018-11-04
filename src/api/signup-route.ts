@@ -1,6 +1,4 @@
 import * as express from "express";
-import { forRoles } from "../auth/role-checker";
-import { Roles } from "../enums/roles";
 import { UserService } from "../services/user-service";
 
 const router = express.Router();

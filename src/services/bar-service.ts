@@ -13,8 +13,8 @@ export class BarService {
     return await DtoFactory.convert(bar) as BarDto;
   }
 
-  public static async getAllBars(): Promise<BarDto[]> {
-    const bars = await BarDao.getAllBars();
+  public static async getBars(query: any): Promise<BarDto[]> {
+    const bars = await BarDao.getBars(query);
     return await DtoFactory.convertList(bars) as BarDto[];
   }
 
