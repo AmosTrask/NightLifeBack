@@ -66,7 +66,8 @@ export class DtoFactory {
     offerDto.name = offer.name;
     offerDto.description = offer.description;
     offerDto.price = offer.price;
-    offerDto.idBar = offer.idBar;
+    offerDto.barId = offer.barId;
+    offerDto.offerType = offer.offerType;
 
     return offerDto;
   }
