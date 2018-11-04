@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/", async (req, res) => {
   await OfferService.getOffers(req.query)
   .then((offers) => {
-    res.status(201).send(offers);
+    res.status(200).send(offers);
   })
   .catch((err) => {
     if (err.message) {

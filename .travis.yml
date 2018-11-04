@@ -12,7 +12,7 @@ services:
 
 before_script:
   - export MONGODB_URL="mongodb://localhost:27017"
-  - export DB_NAME="pillink"
+  - export DB_NAME="NightLifeDB"
   - export TOKEN_MINUTES="60"
   - sleep 10
   - npm run init-db

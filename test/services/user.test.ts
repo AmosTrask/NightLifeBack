@@ -1,7 +1,6 @@
 require("dotenv").config();
 
 import { initDb } from "../../scripts/init-db";
-import { UserDto } from "../../src/dto/user-dto";
 import { User } from "../../src/entities/user";
 import { Roles } from "../../src/enums/roles";
 import { UserService } from "../../src/services/user-service";

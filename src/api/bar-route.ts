@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/", async (req, res) => {
   await BarService.getBars(req.query)
   .then((bars) => {
-    res.status(201).send(bars);
+    res.status(200).send(bars);
   })
   .catch((err) => {
     if (err.message) {
