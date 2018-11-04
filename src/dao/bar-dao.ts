@@ -23,7 +23,7 @@ export class BarDao {
       const db = await MongoDB.Instance.getClient();
       const barDB = db.collection("bars");
 
-      barDB.find({query}).toArray((err: MongoError, bars: Bar[]) => {
+      barDB.find(query).toArray((err: MongoError, bars: Bar[]) => {
         if (err) {
           reject();
           return;
