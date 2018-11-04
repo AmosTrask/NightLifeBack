@@ -54,7 +54,7 @@ describe("Authentication", () => {
   });
 
   it("should correctly identify authenticated user", (done) => {
-    request(app).get("/user")
+    request(app).get("/users")
       .set("Authorization", "Bearer " + token)
       .expect(200)
       .then((response: any) => {
