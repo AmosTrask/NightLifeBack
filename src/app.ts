@@ -13,6 +13,7 @@ import { UserAPI } from "./api/user-route";
 import { AuthGuard } from "./auth/auth-guard";
 import { TokenIssuer } from "./auth/token-issuer";
 import { DrinkAPI } from "./api/drink-route";
+import { PreferenceAPI } from "./api/preference-route";
 
 const app = express();
 
@@ -30,5 +31,6 @@ app.use("/users", UserAPI);
 app.use("/bars", BarAPI);
 app.use("/drinks", DrinkAPI);
 app.use("/offers", OfferAPI);
+app.use("/preferences", PreferenceAPI);
 
 export default app;

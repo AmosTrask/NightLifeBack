@@ -8,6 +8,8 @@ import { Drink } from "../entities/drink";
 import { Entity } from "../entities/entity.abstract";
 import { Offer } from "../entities/offer";
 import { User } from "../entities/user";
+import { Preference } from "../entities/preference";
+import { PreferenceDto } from "../dto/preference-dto";
 
 export class DtoFactory {
   public static async convert(entity: Entity): Promise<DTO> {
@@ -19,6 +21,8 @@ export class DtoFactory {
       return await this.makeOfferDto(entity);
     } else if (entity instanceof Drink) {
       return await this.makeDrinkDto(entity);
+    } else if (entity instanceof Preference) {
+      return await this.makePreferenceDto(entity);
     } else {
       return null;
     }
@@ -83,5 +87,16 @@ export class DtoFactory {
     drinkDto.name = drink.name;
 
     return drinkDto;
+  }
+
+  private static async makePreferenceDto(preference: Preference): Promise<PreferenceDto> {
+    const preferenceDto: PreferenceDto = new PreferenceDto();
+
+    preferenceDto._id = preference._id.toHexString();
+    preferenceDto.userId = preference.userId;
+    preferenceDto.foods = preference.foods;
+    preferenceDto.drinks = preference.drinks;
+
+    return preferenceDto;
   }
 }

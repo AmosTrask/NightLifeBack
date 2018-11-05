@@ -1,0 +1,17 @@
+[
+    {
+        "_id": "507f1f77bcf86cd799439011",
+        "userId": "5bc362b8d95d221ddccaa217",
+        "drinks": [
+            {
+                "_id": "5bc362b8d95a221ddccaa331",
+                "name": "Guiness"
+            },
+            {
+                "_id": "5bc362b8d95a221ddccaa332",
+                "name": "Murphy"
+            }
+        ],
+        "foods": []
+    }
+]
