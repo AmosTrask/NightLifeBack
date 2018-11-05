@@ -1,6 +1,3 @@
-import { User } from "../entities/user";
-
-import * as bcrypt from "bcrypt";
 import { BarDao } from "../dao/bar-dao";
 import { DtoFactory } from "../dto-factory/dto-factory";
 import { BarDto } from "../dto/bar-dto";

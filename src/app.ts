@@ -12,6 +12,7 @@ import { SignupAPI } from "./api/signup-route";
 import { UserAPI } from "./api/user-route";
 import { AuthGuard } from "./auth/auth-guard";
 import { TokenIssuer } from "./auth/token-issuer";
+import { DrinkAPI } from "./api/drink-route";
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use(AuthGuard);
 app.use("/echo", EchoAPI);
 app.use("/users", UserAPI);
 app.use("/bars", BarAPI);
+app.use("/drinks", DrinkAPI);
 app.use("/offers", OfferAPI);
 
 export default app;

@@ -1,8 +1,10 @@
 import { BarDto } from "../dto/bar-dto";
+import { DrinkDto } from "../dto/drink-dto";
 import { DTO } from "../dto/dto.abstract";
 import { OfferDto } from "../dto/offer-dto";
 import { UserDto } from "../dto/user-dto";
 import { Bar } from "../entities/bar";
+import { Drink } from "../entities/drink";
 import { Entity } from "../entities/entity.abstract";
 import { Offer } from "../entities/offer";
 import { User } from "../entities/user";
@@ -15,6 +17,8 @@ export class DtoFactory {
       return await this.makeBarDto(entity);
     } else if (entity instanceof Offer) {
       return await this.makeOfferDto(entity);
+    } else if (entity instanceof Drink) {
+      return await this.makeDrinkDto(entity);
     } else {
       return null;
     }
@@ -70,5 +74,14 @@ export class DtoFactory {
     offerDto.offerType = offer.offerType;
 
     return offerDto;
+  }
+
+  private static async makeDrinkDto(drink: Drink): Promise<DrinkDto> {
+    const drinkDto: DrinkDto = new DrinkDto();
+
+    drinkDto._id = drink._id.toHexString();
+    drinkDto.name = drink.name;
+
+    return drinkDto;
   }
 }
