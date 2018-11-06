@@ -5,11 +5,13 @@ import { OfferDto } from "../dto/offer-dto";
 import { UserDto } from "../dto/user-dto";
 import { Bar } from "../entities/bar";
 import { Drink } from "../entities/drink";
+import { Event } from "../entities/event";
 import { Entity } from "../entities/entity.abstract";
 import { Offer } from "../entities/offer";
 import { User } from "../entities/user";
 import { Preference } from "../entities/preference";
 import { PreferenceDto } from "../dto/preference-dto";
+import { EventDto } from "../dto/event-dto";
 
 export class DtoFactory {
   public static async convert(entity: Entity): Promise<DTO> {
@@ -23,6 +25,8 @@ export class DtoFactory {
       return await this.makeDrinkDto(entity);
     } else if (entity instanceof Preference) {
       return await this.makePreferenceDto(entity);
+    } else if (entity instanceof Event) {
+      return await this.makeEventDto(entity);
     } else {
       return null;
     }
@@ -98,5 +102,18 @@ export class DtoFactory {
     preferenceDto.drinks = preference.drinks;
 
     return preferenceDto;
+  }
+
+  private static async makeEventDto(event: Event): Promise<EventDto> {
+    const eventDto: EventDto = new EventDto();
+
+    eventDto._id = event._id.toHexString();
+    eventDto.name = event.name;
+    eventDto.date = event.date;
+    eventDto.description = event.description;
+    eventDto.eventType = event.eventType;
+    eventDto.barId = event.barId;
+
+    return eventDto;
   }
 }
