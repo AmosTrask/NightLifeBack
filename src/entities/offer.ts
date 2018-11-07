@@ -1,6 +1,7 @@
 import { ObjectID } from "mongodb";
 import { OfferType } from "../enums/offerType";
 import { Entity } from "./entity.abstract";
+import { Product } from "./product";
 
 export class Offer extends Entity {
   public _id?: ObjectID;
@@ -9,6 +10,7 @@ export class Offer extends Entity {
   public barId: string;
   public price: number;
   public offerType: OfferType;
+  public products: Product[];
 
   constructor(offer: Offer) {
     super();
@@ -19,5 +21,6 @@ export class Offer extends Entity {
     this.barId = offer.barId;
     this.price = offer.price;
     this.offerType = offer.offerType;
+    this.products = offer.products;
   }
 }
