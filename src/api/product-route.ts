@@ -1,12 +1,12 @@
 import * as express from "express";
-import { DrinkService } from "../services/drink-service";
+import { ProductService } from "../services/product-service";
 
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  await DrinkService.getDrinks(req.query)
-  .then((drinks) => {
-    res.status(200).send(drinks);
+  await ProductService.getProducts(req.query)
+  .then((products) => {
+    res.status(200).send(products);
   })
   .catch((err) => {
     if (err.message) {
@@ -18,9 +18,9 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/:id", async (req, res) => {
-  await DrinkService.getDrinkById(req.params.id)
-  .then((drink) => {
-    res.status(200).send(drink);
+  await ProductService.getProductById(req.params.id)
+  .then((product) => {
+    res.status(200).send(product);
   })
   .catch((err) => {
     if (err.message) {
@@ -31,4 +31,4 @@ router.get("/:id", async (req, res) => {
   });
 });
 
-export { router as DrinkAPI };
+export { router as ProductAPI };

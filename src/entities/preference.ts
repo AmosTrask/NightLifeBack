@@ -1,21 +1,18 @@
 import { ObjectID } from "mongodb";
 import { Entity } from "./entity.abstract";
-import { Drink } from "./drink";
-import { Food } from "./food";
+import { Product } from "./product";
 
 export class Preference extends Entity {
 
     public _id: ObjectID;
-    public drinks: Drink[];
-    public foods: Food[];
+    public products: Product[];
     public userId: string;
 
     constructor(preference: Preference) {
         super();
 
         this._id = preference._id;
-        this.drinks = preference.drinks;
-        this.foods = preference.foods;
+        this.products = preference.products;
         this.userId = preference.userId;
     }
 }

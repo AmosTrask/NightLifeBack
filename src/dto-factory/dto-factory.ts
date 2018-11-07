@@ -1,10 +1,10 @@
 import { BarDto } from "../dto/bar-dto";
-import { DrinkDto } from "../dto/drink-dto";
+import { ProductDto } from "../dto/product-dto";
 import { DTO } from "../dto/dto.abstract";
 import { OfferDto } from "../dto/offer-dto";
 import { UserDto } from "../dto/user-dto";
 import { Bar } from "../entities/bar";
-import { Drink } from "../entities/drink";
+import { Product } from "../entities/product";
 import { Event } from "../entities/event";
 import { Entity } from "../entities/entity.abstract";
 import { Offer } from "../entities/offer";
@@ -21,8 +21,8 @@ export class DtoFactory {
       return await this.makeBarDto(entity);
     } else if (entity instanceof Offer) {
       return await this.makeOfferDto(entity);
-    } else if (entity instanceof Drink) {
-      return await this.makeDrinkDto(entity);
+    } else if (entity instanceof Product) {
+      return await this.makeProductDto(entity);
     } else if (entity instanceof Preference) {
       return await this.makePreferenceDto(entity);
     } else if (entity instanceof Event) {
@@ -84,13 +84,13 @@ export class DtoFactory {
     return offerDto;
   }
 
-  private static async makeDrinkDto(drink: Drink): Promise<DrinkDto> {
-    const drinkDto: DrinkDto = new DrinkDto();
+  private static async makeProductDto(product: Product): Promise<ProductDto> {
+    const productDto: ProductDto = new ProductDto();
 
-    drinkDto._id = drink._id.toHexString();
-    drinkDto.name = drink.name;
+    productDto._id = product._id.toHexString();
+    productDto.name = product.name;
 
-    return drinkDto;
+    return productDto;
   }
 
   private static async makePreferenceDto(preference: Preference): Promise<PreferenceDto> {
@@ -98,8 +98,7 @@ export class DtoFactory {
 
     preferenceDto._id = preference._id.toHexString();
     preferenceDto.userId = preference.userId;
-    preferenceDto.foods = preference.foods;
-    preferenceDto.drinks = preference.drinks;
+    preferenceDto.products = preference.products;
 
     return preferenceDto;
   }

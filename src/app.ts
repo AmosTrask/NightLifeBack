@@ -12,7 +12,7 @@ import { SignupAPI } from "./api/signup-route";
 import { UserAPI } from "./api/user-route";
 import { AuthGuard } from "./auth/auth-guard";
 import { TokenIssuer } from "./auth/token-issuer";
-import { DrinkAPI } from "./api/drink-route";
+import { ProductAPI } from "./api/product-route";
 import { PreferenceAPI } from "./api/preference-route";
 import { EventAPI } from "./api/event-route";
 
@@ -30,7 +30,7 @@ app.use(AuthGuard);
 app.use("/echo", EchoAPI);
 app.use("/users", UserAPI);
 app.use("/bars", BarAPI);
-app.use("/drinks", DrinkAPI);
+app.use("/products", ProductAPI);
 app.use("/offers", OfferAPI);
 app.use("/preferences", PreferenceAPI);
 app.use("/events", EventAPI);

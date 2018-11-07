@@ -1,14 +1,14 @@
 import { ObjectID } from "mongodb";
 import { Entity } from "./entity.abstract";
 
-export class Food extends Entity {
+export class Product extends Entity {
     public _id?: ObjectID;
     public name: string;
 
-  constructor(food: Food) {
+  constructor(product: Product) {
     super();
 
-    this._id = food._id;
-    this.name = food.name;
+    this._id = product._id;
+    this.name = product.name;
   }
 }

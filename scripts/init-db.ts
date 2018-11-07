@@ -10,7 +10,7 @@ export async function initDb() {
   await initData(db, "users", "data/users.json");
   await initData(db, "bars", "data/bars.json");
   await initData(db, "offers", "data/offers.json");
-  await initData(db, "drinks", "data/drinks.json");
+  await initData(db, "products", "data/products.json");
   await initData(db, "preferences", "data/preferences.json");
   await initData(db, "events", "data/events.json");
 }
