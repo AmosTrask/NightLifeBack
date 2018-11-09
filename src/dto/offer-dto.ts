@@ -1,4 +1,4 @@
-import { OfferType } from "../enums/offerType";
+import { ProductType } from "../enums/productType";
 import { DTO } from "./dto.abstract";
 import { Product } from "../entities/product";
 
@@ -8,6 +8,6 @@ export class OfferDto extends DTO {
   public description: string;
   public barId: string;
   public price: number;
-  public offerType: OfferType;
+  public productTypes: ProductType[];
   public products: Product[];
 }

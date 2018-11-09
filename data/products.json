@@ -1,34 +1,42 @@
 [
     {
         "_id": "5bc362b8d95a221ddccaa331",
-        "name": "Guiness"
+        "name": "Guiness",
+        "productType": "DRINK"
     },
     {
         "_id": "5bc362b8d95a221ddccaa332",
-        "name": "Murphy"
+        "name": "Murphy",
+        "productType": "DRINK"
     },
     {
         "_id": "5bc362b8d95a221ddccaa333",
-        "name": "Heineken"
+        "name": "Heineken",
+        "productType": "DRINK"
     },
     {
         "_id": "5bc362b8d95a221ddccaa334",
-        "name": "Blumers"
+        "name": "Blumers",
+        "productType": "DRINK"
     },
     {
         "_id": "5bc362b8d95a221ddccaa311",
-        "name": "Fried chicken"
+        "name": "Fried chicken",
+        "productType": "FOOD"
     },
     {
         "_id": "5bc362b8d95a221ddccaa322",
-        "name": "Kebab"
+        "name": "Kebab",
+        "productType": "FOOD"
     },
     {
         "_id": "5bc362b8d95a221ddccaa343",
-        "name": "Pizza"
+        "name": "Pizza",
+        "productType": "FOOD"
     },
     {
         "_id": "5bc362b8d95a221ddccaa354",
-        "name": "Hamburger"
+        "name": "Hamburger",
+        "productType": "FOOD"
     }
 ]

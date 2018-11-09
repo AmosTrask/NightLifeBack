@@ -6,6 +6,7 @@ import { ProductService } from "../../src/services/product-service";
 const productRef = {
     _id: "5bc362b8d95a221ddccaa331",
     name: "Guiness",
+    productType: "DRINK",
 };
 
 describe("product service", () => {

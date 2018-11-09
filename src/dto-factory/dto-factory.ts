@@ -79,7 +79,7 @@ export class DtoFactory {
     offerDto.description = offer.description;
     offerDto.price = offer.price;
     offerDto.barId = offer.barId;
-    offerDto.offerType = offer.offerType;
+    offerDto.productTypes = offer.productTypes;
     offerDto.products = offer.products;
 
     return offerDto;
@@ -90,6 +90,7 @@ export class DtoFactory {
 
     productDto._id = product._id.toHexString();
     productDto.name = product.name;
+    productDto.productType = product.productType;
 
     return productDto;
   }

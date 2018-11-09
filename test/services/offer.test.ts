@@ -9,23 +9,27 @@ const offerRef = {
     description: "Two pints for 6€.",
     barId: "5bc362b8d95d221ddccaa331",
     price: "0",
-    offerType: "DRINK",
+    productTypes: [ "DRINK" ],
     products: [
         {
             _id: "5bc362b8d95a221ddccaa331",
             name: "Guiness",
+            productType: "DRINK",
         },
         {
             _id: "5bc362b8d95a221ddccaa332",
             name: "Murphy",
+            productType: "DRINK",
         },
         {
             _id: "5bc362b8d95a221ddccaa333",
             name: "Heineken",
+            productType: "DRINK",
         },
         {
             _id: "5bc362b8d95a221ddccaa334",
             name: "Blumers",
+            productType: "DRINK",
         },
     ],
 };

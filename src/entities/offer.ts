@@ -1,5 +1,5 @@
 import { ObjectID } from "mongodb";
-import { OfferType } from "../enums/offerType";
+import { ProductType } from "../enums/productType";
 import { Entity } from "./entity.abstract";
 import { Product } from "./product";
 
@@ -9,7 +9,7 @@ export class Offer extends Entity {
   public description: string;
   public barId: string;
   public price: number;
-  public offerType: OfferType;
+  public productTypes: ProductType[];
   public products: Product[];
 
   constructor(offer: Offer) {
@@ -20,7 +20,7 @@ export class Offer extends Entity {
     this.description = offer.description;
     this.barId = offer.barId;
     this.price = offer.price;
-    this.offerType = offer.offerType;
+    this.productTypes = offer.productTypes;
     this.products = offer.products;
   }
 }
