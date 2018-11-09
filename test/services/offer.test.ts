@@ -9,7 +9,7 @@ const offerRef = {
     description: "Two pints for 6€.",
     barId: "5bc362b8d95d221ddccaa331",
     price: "0",
-    productTypes: [ "DRINK" ],
+    productType: "DRINK",
     products: [
         {
             _id: "5bc362b8d95a221ddccaa331",

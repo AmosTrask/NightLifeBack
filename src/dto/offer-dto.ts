@@ -8,6 +8,6 @@ export class OfferDto extends DTO {
   public description: string;
   public barId: string;
   public price: number;
-  public productTypes: ProductType[];
+  public productType: ProductType;
   public products: Product[];
 }

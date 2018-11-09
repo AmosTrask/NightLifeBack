@@ -9,7 +9,7 @@ export class Offer extends Entity {
   public description: string;
   public barId: string;
   public price: number;
-  public productTypes: ProductType[];
+  public productType: ProductType;
   public products: Product[];
 
   constructor(offer: Offer) {
@@ -20,7 +20,7 @@ export class Offer extends Entity {
     this.description = offer.description;
     this.barId = offer.barId;
     this.price = offer.price;
-    this.productTypes = offer.productTypes;
+    this.productType = offer.productType;
     this.products = offer.products;
   }
 }

@@ -80,7 +80,7 @@ export class DtoFactory {
     offerDto.description = offer.description;
     offerDto.price = offer.price;
     offerDto.barId = offer.barId;
-    offerDto.productTypes = offer.productTypes;
+    offerDto.productType = offer.productType;
     offerDto.products = offer.products;
 
     return offerDto;
