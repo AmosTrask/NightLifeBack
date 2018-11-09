@@ -1,11 +1,13 @@
 import { ObjectID } from "mongodb";
 import { Entity } from "./entity.abstract";
+import { MenuProduct } from "./menuProduct";
 
 export class Bar extends Entity {
   public _id?: ObjectID;
   public name: string;
   public address: string;
   public coordinates: Coordinates;
+  public menuProducts: MenuProduct[];
 
   constructor(bar: Bar) {
     super();
@@ -14,5 +16,6 @@ export class Bar extends Entity {
     this.name = bar.name;
     this.address = bar.address;
     this.coordinates = bar.coordinates;
+    this.menuProducts = bar.menuProducts;
   }
 }

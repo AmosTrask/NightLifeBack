@@ -11,6 +11,32 @@ const barRef = {
         lat: "52.663091",
         lng: "-8.623585",
     },
+    menuProducts: [
+        {
+            _id: "5bc362b8d95a221ddccaa333",
+            name: "Heineken",
+            productType: "DRINK",
+            price: "3",
+        },
+        {
+            _id: "5bc362b8d95a221ddccaa334",
+            name: "Blumers",
+            productType: "DRINK",
+            price: "3",
+        },
+        {
+            _id: "5bc362b8d95a221ddccaa343",
+            name: "Pizza",
+            productType: "FOOD",
+            price: "8",
+        },
+        {
+            _id: "5bc362b8d95a221ddccaa354",
+            name: "Hamburger",
+            productType: "FOOD",
+            price: "4",
+        },
+    ],
 };
 
 describe("bar service", () => {
