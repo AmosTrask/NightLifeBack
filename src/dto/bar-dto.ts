@@ -7,4 +7,5 @@ export class BarDto extends DTO {
   public address: string;
   public coordinates: Coordinates;
   public menuProducts: MenuProduct[];
+  public rating: number;
 }

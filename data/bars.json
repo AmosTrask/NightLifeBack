@@ -12,27 +12,32 @@
         "_id": "5bc362b8d95a221ddccaa333",
         "name": "Heineken",
         "productType": "DRINK",
-        "price": "3"
+        "price": "3",
+        "rating": "1"
       },
       {
         "_id": "5bc362b8d95a221ddccaa334",
         "name": "Blumers",
         "productType": "DRINK",
-        "price": "3"
+        "price": "3",
+        "rating": "4"
       },
       {
         "_id": "5bc362b8d95a221ddccaa343",
         "name": "Pizza",
         "productType": "FOOD",
-        "price": "8"
+        "price": "8",
+        "rating": "5"
       },
       {
         "_id": "5bc362b8d95a221ddccaa354",
         "name": "Hamburger",
         "productType": "FOOD",
-        "price": "4"
+        "price": "4",
+        "rating": "5"
       }
-    ]
+    ],
+    "rating": "4"
   },
   {
     "_id": "5bc362b8d95d221ddccaa332",
@@ -47,26 +52,31 @@
         "_id": "5bc362b8d95a221ddccaa331",
         "name": "Guiness",
         "productType": "DRINK",
-        "price": "4"
+        "price": "4",
+        "rating": "5"
       },
       {
         "_id": "5bc362b8d95a221ddccaa332",
         "name": "Murphy",
         "productType": "DRINK",
-        "price": "3"
+        "price": "3",
+        "rating": "5"
       },
       {
         "_id": "5bc362b8d95a221ddccaa311",
         "name": "Fried chicken",
         "productType": "FOOD",
-        "price": "3"
+        "price": "3",
+        "rating": "1"
       },
       {
         "_id": "5bc362b8d95a221ddccaa322",
         "name": "Kebab",
         "productType": "FOOD",
-        "price": "3"
+        "price": "3",
+        "rating": "3"
       }
-    ]
+    ],
+    "rating": "5"
   }
 ]

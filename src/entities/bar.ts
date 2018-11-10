@@ -8,6 +8,7 @@ export class Bar extends Entity {
   public address: string;
   public coordinates: Coordinates;
   public menuProducts: MenuProduct[];
+  public rating: number;
 
   constructor(bar: Bar) {
     super();
@@ -17,5 +18,6 @@ export class Bar extends Entity {
     this.address = bar.address;
     this.coordinates = bar.coordinates;
     this.menuProducts = bar.menuProducts;
+    this.rating = bar.rating;
   }
 }

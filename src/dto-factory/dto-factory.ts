@@ -68,6 +68,7 @@ export class DtoFactory {
     barDto.address = bar.address;
     barDto.coordinates = bar.coordinates;
     barDto.menuProducts = bar.menuProducts;
+    barDto.rating = bar.rating;
 
     return barDto;
   }

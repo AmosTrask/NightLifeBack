@@ -5,11 +5,13 @@ import { Product } from "./product";
 export class MenuProduct extends Entity {
     public product: Product;
     public price: number;
+    public rating: number;
 
     constructor(menuProduct: MenuProduct) {
         super();
 
         this.product = menuProduct.product;
         this.price = menuProduct.price;
+        this.rating = menuProduct.rating;
     }
 }

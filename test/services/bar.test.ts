@@ -17,26 +17,31 @@ const barRef = {
             name: "Heineken",
             productType: "DRINK",
             price: "3",
+            rating: "1",
         },
         {
             _id: "5bc362b8d95a221ddccaa334",
             name: "Blumers",
             productType: "DRINK",
             price: "3",
+            rating: "4",
         },
         {
             _id: "5bc362b8d95a221ddccaa343",
             name: "Pizza",
             productType: "FOOD",
             price: "8",
+            rating: "5",
         },
         {
             _id: "5bc362b8d95a221ddccaa354",
             name: "Hamburger",
             productType: "FOOD",
             price: "4",
+            rating: "5",
         },
     ],
+    rating: "4",
 };
 
 describe("bar service", () => {
