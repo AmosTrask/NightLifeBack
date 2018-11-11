@@ -6,6 +6,7 @@ export class MenuProduct extends Entity {
     public product: Product;
     public price: number;
     public rating: number;
+    public img: string;
 
     constructor(menuProduct: MenuProduct) {
         super();
@@ -13,5 +14,6 @@ export class MenuProduct extends Entity {
         this.product = menuProduct.product;
         this.price = menuProduct.price;
         this.rating = menuProduct.rating;
+        this.img = menuProduct.img;
     }
 }

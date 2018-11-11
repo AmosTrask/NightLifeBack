@@ -18,6 +18,7 @@ const barRef = {
             productType: "DRINK",
             price: "3",
             rating: "1",
+            img: "https://logos-download.com/wp-content/uploads/2017/11/Heineken_logo-700x700.png",
         },
         {
             _id: "5bc362b8d95a221ddccaa334",
@@ -25,6 +26,7 @@ const barRef = {
             productType: "DRINK",
             price: "3",
             rating: "4",
+            img: "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/062013/bulmers_cider.png?itok=dvxZzJSK",
         },
         {
             _id: "5bc362b8d95a221ddccaa343",
@@ -32,6 +34,7 @@ const barRef = {
             productType: "FOOD",
             price: "8",
             rating: "5",
+            img: "https://recipes.timesofindia.com/photo/53110049.cms?imgsize=148092",
         },
         {
             _id: "5bc362b8d95a221ddccaa354",
@@ -39,6 +42,7 @@ const barRef = {
             productType: "FOOD",
             price: "4",
             rating: "5",
+            img: "https://cdn.pixabay.com/photo/2015/04/20/13/25/burger-731298_1280.jpg",
         },
     ],
     rating: "4",

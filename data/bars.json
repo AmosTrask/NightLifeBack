@@ -13,28 +13,32 @@
         "name": "Heineken",
         "productType": "DRINK",
         "price": "3",
-        "rating": "1"
+        "rating": "1",
+        "img": "https://logos-download.com/wp-content/uploads/2017/11/Heineken_logo-700x700.png"
       },
       {
         "_id": "5bc362b8d95a221ddccaa334",
         "name": "Blumers",
         "productType": "DRINK",
         "price": "3",
-        "rating": "4"
+        "rating": "4",
+        "img": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/062013/bulmers_cider.png?itok=dvxZzJSK"
       },
       {
         "_id": "5bc362b8d95a221ddccaa343",
         "name": "Pizza",
         "productType": "FOOD",
         "price": "8",
-        "rating": "5"
+        "rating": "5",
+        "img": "https://recipes.timesofindia.com/photo/53110049.cms?imgsize=148092"
       },
       {
         "_id": "5bc362b8d95a221ddccaa354",
         "name": "Hamburger",
         "productType": "FOOD",
         "price": "4",
-        "rating": "5"
+        "rating": "5",
+        "img": "https://cdn.pixabay.com/photo/2015/04/20/13/25/burger-731298_1280.jpg"
       }
     ],
     "rating": "4"
@@ -53,28 +57,32 @@
         "name": "Guiness",
         "productType": "DRINK",
         "price": "4",
-        "rating": "5"
+        "rating": "5",
+        "img": "https://www.bayridgewine.com/wp-content/uploads/2018/05/Guinness-LOGO.jpg"
       },
       {
         "_id": "5bc362b8d95a221ddccaa332",
         "name": "Murphy",
         "productType": "DRINK",
         "price": "3",
-        "rating": "5"
+        "rating": "5",
+        "img": "https://d2sochvv0rudri.cloudfront.net/beer_labels/619/thumb_murphy-s-stout.jpg"
       },
       {
         "_id": "5bc362b8d95a221ddccaa311",
         "name": "Fried chicken",
         "productType": "FOOD",
         "price": "3",
-        "rating": "1"
+        "rating": "1",
+        "img": "https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350"
       },
       {
         "_id": "5bc362b8d95a221ddccaa322",
         "name": "Kebab",
         "productType": "FOOD",
         "price": "3",
-        "rating": "3"
+        "rating": "3",
+        "img": "https://cdn.pixabay.com/photo/2017/06/28/15/52/kebab-2451112_1280.jpg"
       }
     ],
     "rating": "5"
