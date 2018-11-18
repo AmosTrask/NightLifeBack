@@ -39,18 +39,46 @@
     },
     {
         "_id": "5bc433b8d95d221ddccaa003",
-        "name": "Name",
-        "description": "Description",
+        "name": "2 pizza for one",
+        "description": "Order one pizza and get one free !",
         "barId": "5bc362b8d95d221ddccaa332",
-        "price": "5",
-        "productType": "OTHER"
+        "price": "10",
+        "productType": "FOOD",
+        "products": [
+            {
+                "_id": "5bc362b8d95a221ddccaa343",
+                "name": "Pizza",
+                "productType": "FOOD"
+            }
+        ]
     },
     {
         "_id": "5bc433b8d95d221ddccaa004",
-        "name": "Name",
+        "name": "Second pint for 3€",
         "description": "Description",
         "barId": "5bc362b8d95d221ddccaa332",
-        "price": "2",
-        "productType": "OTHER"
+        "price": "3",
+        "productType": "DRINK",
+        "products": [
+            {
+                "_id": "5bc362b8d95a221ddccaa331",
+                "name": "Guiness",
+                "productType": "DRINK"
+            },
+            {
+                "_id": "5bc362b8d95a221ddccaa332",
+                "name": "Murphy",
+                "productType": "DRINK"
+            },
+            {
+                "_id": "5bc362b8d95a221ddccaa333",
+                "name": "Heineken",
+                "productType": "DRINK"
+            },
+            {
+                "_id": "5bc362b8d95a221ddccaa334",
+                "name": "Blumers",
+                "productType": "DRINK"
+            }
     }
 ]
