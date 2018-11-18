@@ -9,7 +9,7 @@ const eventRef = {
     description: "Discover this amazing new musician",
     barId: "5bc362b8d95d221ddccaa331",
     eventType: "LIVEMUSIC",
-    date: "2012-04-23T18:25:43.511Z",
+    date: "2018-11-30T18:25:43.511Z",
 };
 
 describe("event service", () => {

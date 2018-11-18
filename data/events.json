@@ -5,7 +5,7 @@
         "description": "Discover this amazing new musician",
         "barId": "5bc362b8d95d221ddccaa331",
         "eventType": "LIVEMUSIC",
-        "date": "2012-04-23T18:25:43.511Z"
+        "date": "2018-11-30T18:25:43.511Z"
     },
     {
         "_id": "5bc433b8d95d221ddccaa201",
@@ -13,7 +13,7 @@
         "description": "Dj random coming",
         "barId": "5bc362b8d95d221ddccaa331",
         "eventType": "DJ",
-        "date": "2012-04-23T18:25:43.511Z"
+        "date": "2018-11-29T18:25:43.511Z"
     },
     {
         "_id": "5bc433b8d95d221ddccaa301",
@@ -21,14 +21,14 @@
         "description": "Open mic here at Flannery's",
         "barId": "5bc362b8d95d221ddccaa331",
         "eventType": "OPENMIC",
-        "date": "2012-04-23T18:25:43.511Z"
+        "date": "2018-11-28T18:25:43.511Z"
     },
     {
         "_id": "5bc433b8d95d221ddccaa401",
-        "name": "BLABLA",
-        "description": "I don't know",
+        "name": "Bingo",
+        "description": "Enjoy a bingo with your friends",
         "barId": "5bc362b8d95d221ddccaa332",
         "eventType": "OTHER",
-        "date": "2012-04-23T18:25:43.511Z"
+        "date": "2018-12-01T18:25:43.511Z"
     }
 ]
