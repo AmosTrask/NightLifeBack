@@ -55,7 +55,7 @@
     {
         "_id": "5bc433b8d95d221ddccaa004",
         "name": "Second pint for 3€",
-        "description": "Description",
+        "description": "The second pint is only 3€",
         "barId": "5bc362b8d95d221ddccaa332",
         "price": "3",
         "productType": "DRINK",
@@ -78,6 +78,21 @@
             {
                 "_id": "5bc362b8d95a221ddccaa334",
                 "name": "Blumers",
+                "productType": "DRINK"
+            }
+        ]
+    },
+    {
+        "_id": "5bc433b8d95d221ddccaa005",
+        "name": "2€ for a pint of guiness",
+        "description": "Special discount on guiness",
+        "barId": "5bc362b8d95d221ddccaa333",
+        "price": "2",
+        "productType": "DRINK",
+        "products": [
+            {
+                "_id": "5bc362b8d95a221ddccaa331",
+                "name": "Guiness",
                 "productType": "DRINK"
             }
         ]
