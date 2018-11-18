@@ -22,7 +22,7 @@ const barRef = {
         },
         {
             _id: "5bc362b8d95a221ddccaa334",
-            name: "Blumers",
+            name: "Bulmers",
             productType: "DRINK",
             price: "3",
             rating: "4",

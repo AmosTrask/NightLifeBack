@@ -28,7 +28,7 @@ const offerRef = {
         },
         {
             _id: "5bc362b8d95a221ddccaa334",
-            name: "Blumers",
+            name: "Bulmers",
             productType: "DRINK",
         },
     ],
