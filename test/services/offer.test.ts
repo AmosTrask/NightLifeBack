@@ -13,12 +13,12 @@ const offerRef = {
     products: [
         {
             _id: "5bc362b8d95a221ddccaa331",
-            name: "Guiness",
+            name: "Guinness",
             productType: "DRINK",
         },
         {
             _id: "5bc362b8d95a221ddccaa332",
-            name: "Murphy",
+            name: "Murphy’s",
             productType: "DRINK",
         },
         {

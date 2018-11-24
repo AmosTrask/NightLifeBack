@@ -17,12 +17,12 @@
         "products": [
             {
                 "_id": "5bc362b8d95a221ddccaa331",
-                "name": "Guiness",
+                "name": "Guinness",
                 "productType": "DRINK"
             },
             {
                 "_id": "5bc362b8d95a221ddccaa332",
-                "name": "Murphy",
+                "name": "Murphy’s",
                 "productType": "DRINK"
             },
             {
@@ -62,12 +62,12 @@
         "products": [
             {
                 "_id": "5bc362b8d95a221ddccaa331",
-                "name": "Guiness",
+                "name": "Guinness",
                 "productType": "DRINK"
             },
             {
                 "_id": "5bc362b8d95a221ddccaa332",
-                "name": "Murphy",
+                "name": "Murphy’s",
                 "productType": "DRINK"
             },
             {
@@ -84,15 +84,15 @@
     },
     {
         "_id": "5bc433b8d95d221ddccaa005",
-        "name": "2€ for a pint of guiness",
-        "description": "Special discount on guiness",
+        "name": "2€ for a pint of guinness",
+        "description": "Special discount on guinness",
         "barId": "5bc362b8d95d221ddccaa333",
         "price": "2",
         "productType": "DRINK",
         "products": [
             {
                 "_id": "5bc362b8d95a221ddccaa331",
-                "name": "Guiness",
+                "name": "Guinness",
                 "productType": "DRINK"
             }
         ]

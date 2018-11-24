@@ -54,7 +54,7 @@
     "menuProducts": [
       {
         "_id": "5bc362b8d95a221ddccaa331",
-        "name": "Guiness",
+        "name": "Guinness",
         "productType": "DRINK",
         "price": "4",
         "rating": "5",
@@ -62,7 +62,7 @@
       },
       {
         "_id": "5bc362b8d95a221ddccaa332",
-        "name": "Murphy",
+        "name": "Murphy’s",
         "productType": "DRINK",
         "price": "3",
         "rating": "5",
@@ -98,7 +98,7 @@
     "menuProducts": [
       {
         "_id": "5bc362b8d95a221ddccaa331",
-        "name": "Guiness",
+        "name": "Guinness",
         "productType": "DRINK",
         "price": "3",
         "rating": "5",
@@ -106,7 +106,7 @@
       },
       {
         "_id": "5bc362b8d95a221ddccaa332",
-        "name": "Murphy",
+        "name": "Murphy’s",
         "productType": "DRINK",
         "price": "4",
         "rating": "5",
