@@ -7,6 +7,7 @@
     "start": "npm run build && npm run init-db && node dist/server.js",
     "init-db": "ts-node ./scripts/run-init-db.ts",
     "serve": "npm run build && concurrently --kill-others \"npm run build-watch\" \"npm run serve-debug\"",
+    "serve-init-db": "npm run build && npm run init-db && concurrently --kill-others \"npm run build-watch\" \"npm run serve-debug\"",
     "build": "tsc",
     "build-watch": "tsc -w",
     "serve-debug": "nodemon --inspect dist/server.js",

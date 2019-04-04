@@ -1,14 +1,18 @@
 version: "2"
 services:
   app:
-    container_name: app
+    container_name: nightlifeback
+    image: nightlifeback
     build: .
+    command: npm run serve-init-db
     env_file:
       - .env
     ports:
       - "3000:3000"
     links:
       - mongo
+    volumes:
+      - ./src:/DockerNightLifeBack/src
   mongo:
     container_name: mongo
     image: mongo
